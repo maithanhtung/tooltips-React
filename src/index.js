@@ -11,5 +11,5 @@ import Tooltip from './Tooltip';
 
 storiesOf('Tooltip', module)
   .add('example', () => (
-    <Tooltip>Example story</Tooltip>
+    <Tooltip content="test">Example story</Tooltip>
   ));
