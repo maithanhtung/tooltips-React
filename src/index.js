@@ -10,6 +10,14 @@ import { storiesOf } from '@storybook/react';
 import Tooltip from './Tooltip';
 
 storiesOf('Tooltip', module)
-  .add('example', () => (
-    <Tooltip content="test">Example story</Tooltip>
+  .add('TopToolTip', () => (
+    <Tooltip content="Tooltip" placement="top">This will have Tooltip on the Top</Tooltip>
+  ))
+
+  .add('RightTooltip', () => (
+  	<Tooltip content="Tooltip" placement="right">This will have Tooltip at right</Tooltip>
+  ))
+
+  .add('LeftToolTip', () => (
+  	<Tooltip content='LeftToolTip' placement="left">This will appear on the left</Tooltip>
   ));
