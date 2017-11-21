@@ -49,7 +49,7 @@ export default class Tooltip extends Component {
 
       case 'bottom' :
       default :
-        style.bottom = '100%';
+        style.top = '100%';
         style.left = '50%';
         style.transform = 'translateX(-50%)';
         style.marginTop = '10px';
@@ -63,7 +63,6 @@ export default class Tooltip extends Component {
     let style = {} 
     switch (this.props.placement) {
       case 'top':
-
         style.bottom = '-5px';
         style.left = '50%';
         style.marginLeft = '-5px';
@@ -73,6 +72,12 @@ export default class Tooltip extends Component {
         break;
 
       case 'left' :
+        style.right = '0px';
+        style.top = '50%';
+        style.marginRight = '-5px';
+        style.borderTop = 'solid transparent 5px';
+        style.borderBottom = 'solid transparent 5px';
+        style.borderLeft = 'solid #000 5px';
         break;
 
       case 'right' :
@@ -86,6 +91,12 @@ export default class Tooltip extends Component {
 
       case 'bottom' :
       default :
+        style.top = '-5px';
+        style.left = '50%';
+        style.marginLeft = '-5px';
+        style.borderLeft = 'solid transparent 5px';
+        style.borderRight = 'solid transparent 5px';
+        style.borderBottom = 'solid #000 5px';
         break;
 
     }
